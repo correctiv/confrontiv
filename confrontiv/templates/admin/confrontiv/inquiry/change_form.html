@@ -1,0 +1,17 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+
+{% block content %}
+  {{ block.super }}
+  {% if original.pk %}
+    <div>
+      <form method="post" action="{% url 'admin:confrontiv-admin_make_inquiry_requests' %}" enctype="multipart/form-data">{% csrf_token %}
+        <p>
+          <input type="file" name="file"/>
+          <input type="hidden" name="inquiry_pk" value="{{ original.pk }}"/>
+          <input type="submit" value="{% trans "Setup inquiry requests" %}"/>
+        </p>
+      </form>
+    </div>
+  {% endif %}
+{% endblock %}

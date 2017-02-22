@@ -1,0 +1,25 @@
+{% extends "confrontiv/base.html" %}
+
+{% load i18n %}
+{% load markdown_deux_tags %}
+{% load crispy_forms_tags %}
+
+{% block header-nav %}{% endblock %}
+{% block callout %}{% endblock %}
+{# {% block title %}{% blocktrans name=object.inquiry.%}Inquiry for {% endblocktrans %}{% endblock %}#}
+
+
+{% block main %}
+
+<h3>{{ object.subject }}</h3>
+
+<div>
+{{ object.intro|markdown }}
+</div>
+
+<div>
+{% crispy form %}
+</div>
+
+
+{% endblock %}
