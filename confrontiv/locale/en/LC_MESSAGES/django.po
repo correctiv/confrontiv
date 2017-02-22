@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-22 17:31+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin.py:40 admin.py:116
+msgid "Export to CSV"
+msgstr ""
+
+#: cms_apps.py:7
+msgid "Confrontiv App"
+msgstr ""
+
+#: forms.py:53
+msgid "Send your response"
+msgstr ""
+
+#: models.py:22
+msgid "Recipient Group"
+msgstr ""
+
+#: models.py:23
+msgid "Recipient Groups"
+msgstr ""
+
+#: models.py:43
+msgid "Recipient"
+msgstr ""
+
+#: models.py:44
+msgid "Recipients"
+msgstr ""
+
+#: models.py:55 models.py:147
+msgid "Is sent to the recipient"
+msgstr ""
+
+#: models.py:57 models.py:149
+msgid "Appears on the inquiry page"
+msgstr ""
+
+#: models.py:62
+msgid "Inquiry Template"
+msgstr ""
+
+#: models.py:63
+msgid "Inquiry Templates"
+msgstr ""
+
+#: models.py:91
+msgid "Inquiry"
+msgstr ""
+
+#: models.py:92
+msgid "Inquiries"
+msgstr ""
+
+#: models.py:155
+msgid "by email"
+msgstr ""
+
+#: models.py:156
+msgid "by fax"
+msgstr ""
+
+#: models.py:164
+msgid "Inquiry Request"
+msgstr ""
+
+#: models.py:165
+msgid "Inquiry Requests"
+msgstr ""
+
+#: models.py:195
+msgid "Inquiry Response"
+msgstr ""
+
+#: models.py:196
+msgid "Inquiry Responses"
+msgstr ""
+
+#: templates/admin/confrontiv/inquiry/change_form.html:12
+msgid "Setup inquiry requests"
+msgstr ""
+
+#: templates/admin/confrontiv/recipient/change_list.html:8
+msgid "Upload Recipients"
+msgstr ""
+
+#: templates/admin/confrontiv/recipient/change_list.html:12
+msgid "Generate recipients via CSV"
+msgstr ""
+
+#: templates/confrontiv/inquiryrequest_detail.html:7
+#: templates/confrontiv/inquiryrequest_detail.html:11
+msgid "Thanks for your statement"
+msgstr ""
+
+#: urls.py:9
+msgid "thanks"
+msgstr ""

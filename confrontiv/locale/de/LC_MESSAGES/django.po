@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-22 17:31+0100\n"
+"PO-Revision-Date: 2017-02-22 17:36+0100\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Stefan Wehrmeyer <stefan.wehrmeyer@okfn.org>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.7.5\n"
+
+#: admin.py:40 admin.py:116
+msgid "Export to CSV"
+msgstr "Export nach CSV"
+
+#: cms_apps.py:7
+msgid "Confrontiv App"
+msgstr "Confrontiv-App"
+
+#: forms.py:53
+msgid "Send your response"
+msgstr "Senden Sie Ihre Antwort ab"
+
+#: models.py:22
+msgid "Recipient Group"
+msgstr "Empfängergruppe"
+
+#: models.py:23
+msgid "Recipient Groups"
+msgstr "Empfängergruppen"
+
+#: models.py:43
+msgid "Recipient"
+msgstr "Empfänger"
+
+#: models.py:44
+msgid "Recipients"
+msgstr "Emfpänger"
+
+#: models.py:55 models.py:147
+msgid "Is sent to the recipient"
+msgstr "Wird an den Empfänger geschickt"
+
+#: models.py:57 models.py:149
+msgid "Appears on the inquiry page"
+msgstr "Erscheint auf der Konfrontationsseite"
+
+#: models.py:62
+msgid "Inquiry Template"
+msgstr "Konfrontations-Template"
+
+#: models.py:63
+msgid "Inquiry Templates"
+msgstr "Konfrontations-Templates"
+
+#: models.py:91
+msgid "Inquiry"
+msgstr "Konfrontation"
+
+#: models.py:92
+msgid "Inquiries"
+msgstr "Konfrontationen"
+
+#: models.py:155
+msgid "by email"
+msgstr "per E-Mail"
+
+#: models.py:156
+msgid "by fax"
+msgstr "per Fax"
+
+#: models.py:164
+msgid "Inquiry Request"
+msgstr "Konfrontationsanfrage"
+
+#: models.py:165
+msgid "Inquiry Requests"
+msgstr "Konfrontationsanfragen"
+
+#: models.py:195
+msgid "Inquiry Response"
+msgstr "Antwort auf Konfrontation"
+
+#: models.py:196
+msgid "Inquiry Responses"
+msgstr "Antworten auf Konfrontation"
+
+#: templates/admin/confrontiv/inquiry/change_form.html:12
+msgid "Setup inquiry requests"
+msgstr "Konfrontationsanfragen aufsetzen"
+
+#: templates/admin/confrontiv/recipient/change_list.html:8
+msgid "Upload Recipients"
+msgstr "Lade Empfänger hoch"
+
+#: templates/admin/confrontiv/recipient/change_list.html:12
+msgid "Generate recipients via CSV"
+msgstr "Generiere Empfänger via CSV"
+
+#: templates/confrontiv/inquiryrequest_detail.html:7
+#: templates/confrontiv/inquiryrequest_detail.html:11
+msgid "Thanks for your statement"
+msgstr "Vielen Dank für Ihre Stellungnahme"
+
+#: urls.py:9
+msgid "thanks"
+msgstr "danke"
