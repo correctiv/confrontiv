@@ -3,7 +3,9 @@ from django.conf import settings
 
 
 def send_by_email(ir):
-    from_email = getattr(settings, 'CONFRONTIV_FROM_EMAIL',
+    from_email = ir.from_email
+    if not from_email:
+        from_email = getattr(settings, 'CONFRONTIV_FROM_EMAIL',
                          settings.DEFAULT_FROM_EMAIL)
     if not ir.recipient.email:
         return False

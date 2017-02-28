@@ -51,6 +51,7 @@ class Recipient(models.Model):
 class InquiryTemplate(models.Model):
     name = models.CharField(max_length=255)
 
+    from_email = models.EmailField(max_length=255, blank=True)
     subject = models.CharField(max_length=255, blank=True)
     body = models.TextField(blank=True, help_text=_('Is sent to the recipient'))
     intro = models.TextField(blank=True,
@@ -64,6 +65,9 @@ class InquiryTemplate(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_from_email(self, context):
+        return self.render(self.from_email, context)
 
     def get_subject(self, context):
         return self.render(self.subject, context)
@@ -119,6 +123,7 @@ class InquiryRequestManager(models.Manager):
         template = inquiry.template
         context = self.make_context(ir, template, data)
         template_context = Context(context)
+        ir.from_email = template.get_from_email(template_context)
         ir.subject = template.get_subject(template_context)
         ir.body = template.get_body(template_context)
         ir.intro = template.get_intro(template_context)
@@ -143,6 +148,7 @@ class InquiryRequest(models.Model):
     inquiry = models.ForeignKey(Inquiry)
     recipient = models.ForeignKey(Recipient)
 
+    from_email = models.EmailField(max_length=255, blank=True)
     subject = models.CharField(max_length=255, blank=True)
     body = models.TextField(blank=True, help_text=_('Is sent to the recipient'))
     intro = models.TextField(blank=True,
