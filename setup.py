@@ -35,6 +35,7 @@ setup(
     install_requires=[
         'Django',
         'unicodecsv',
+        'django-crispy-forms'
     ],
     include_package_data=True,
     classifiers=[
