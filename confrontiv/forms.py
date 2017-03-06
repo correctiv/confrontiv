@@ -14,7 +14,10 @@ FIELD_TYPES = {
     'char': (forms.CharField, {}),
     'text': (forms.CharField, {'widget': forms.Textarea}),
     'boolean': (forms.BooleanField, {}),
-    'choice': (forms.ChoiceField, {})
+    'choice': (forms.ChoiceField, {}),
+    'boolchoice': (forms.ChoiceField, {'choices': ((1, _('Yes')),
+                                                   (0, _('No'))),
+                                       'widget': forms.RadioSelect})
 }
 
 
