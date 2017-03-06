@@ -8,9 +8,8 @@ from django.core.exceptions import PermissionDenied
 
 import unicodecsv
 
-from correctiv_community.helpers.csv_utils import export_csv_response
-
 from .core import make_inquiry_requests_from_file
+from .csv_utils import export_csv_response
 from .models import (RecipientGroup, Recipient, InquiryTemplate, Inquiry,
                      InquiryRequest, InquiryResponse)
 
